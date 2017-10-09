@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/post_image"
+            android:background="@color/cast_expanded_controller_ad_container_white_stripe_color"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_username"
+        android:text="Post Road Goes Here"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/post_image"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_desc"
+        android:text="The Post Goes Here"
+        android:layout_below="@+id/post_username"
+        android:padding="5dp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_age"
+        android:text="username"
+        android:layout_below="@+id/post_desc"
+        android:padding="5dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_gender"
+            android:text="username"
+            android:layout_below="@+id/post_age"
+            android:padding="5dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_phone"
+            android:text="username"
+            android:layout_below="@+id/post_gender"
+            android:padding="5dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="latitude"
+        android:id="@+id/textLatitude"
+        android:layout_below="@+id/post_phone"
+        android:padding="5dp"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLatitude"
+        android:text="latitude"
+        android:id="@+id/textLongitude"
+        android:visibility="invisible"
+        android:padding="5dp"
+        tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
